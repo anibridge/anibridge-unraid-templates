@@ -1,2 +1,3 @@
 # anibridge-unraid-templates
-Docker templates for Unraid
+
+Unraid templates for the [AniBridge](https://anibridge.eliasbenb.dev) project.
