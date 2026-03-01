@@ -1,30 +1,30 @@
 <?xml version="1.0"?>
 <Container version="2">
     <Name>AniBridge</Name>
-    <Project>https://anibridge.eliasbenb.dev</Project>
-    <Registry>https://ghcr.io/anibridge/anibridge</Registry>
     <Repository>ghcr.io/anibridge/anibridge:v2</Repository>
-    <Support>https://github.com/anibridge/anibridge/issues</Support>
-
-    <Category>MediaApp:Other Tools:Utilities</Category>
-    <Icon>https://raw.githubusercontent.com/anibridge/anibridge-unraid-templates/main/images/anibridge.png</Icon>
-    <Overview>The smart way to keep your anime lists perfectly synchronized.</Overview>
-    <TemplateURL>https://raw.githubusercontent.com/anibridge/anibridge-unraid-templates/main/anibridge.xml</TemplateURL>
-
-    <Maintainer>
-        <WebPage>https://github.com/eliasbenb</WebPage>
-    </Maintainer>
-
+    <Registry>https://github.com/anibridge/anibridge/pkgs/container/anibridge</Registry>
     <Network>bridge</Network>
-    <WebUI>http://[IP]:[PORT:4848]/</WebUI>
-
     <Shell>sh</Shell>
     <Privileged>false</Privileged>
-
+    <Support>https://github.com/anibridge/anibridge/issues</Support>
+    <Project>https://github.com/anibridge/anibridge</Project>
+    <ReadMe>https://anibridge.eliasbenb.dev</ReadMe>
+    <Overview>The smart way to keep your anime lists perfectly synchronized.</Overview>
+    <Category>MediaApp:Other Tools:Utilities</Category>
+    <WebUI>http://[IP]:[PORT:4848]/</WebUI>
+    <TemplateURL>https://raw.githubusercontent.com/anibridge/anibridge-unraid-templates/main/anibridge.xml</TemplateURL>
+    <Icon>https://raw.githubusercontent.com/anibridge/anibridge-unraid-templates/main/images/anibridge.png</Icon>
+    <DonateText>I know the Saudi oilers reading this got me !!</DonateText>
+    <DonateLink>https://github.com/sponsors/eliasbenb</DonateLink>
+    <DonateImg/>
+    <Requires/>
+    <Branch><Tag>v2</Tag><TagDescription>v2</TagDescription></Branch>
+    <Branch><Tag>latest</Tag><TagDescription>Latest</TagDescription></Branch>
+    <Branch><Tag>beta</Tag><TagDescription>Beta</TagDescription></Branch>
+    <Branch><Tag>experimental</Tag><TagDescription>Experimental</TagDescription></Branch>
     <Config Name="WebUI" Target="4848" Default="4848" Mode="tcp" Description="Web UI port" Type="Port" Display="always" Required="true" Mask="false">4848</Config>
     <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/anibridge" Mode="rw" Description="Persistent config and data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/anibridge</Config>
-
-    <Config Name="PUID" Target="PUID" Default="100" Description="User ID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
-    <Config Name="PGID" Target="PGID" Default="99" Description="Group ID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+    <Config Name="PUID" Target="PUID" Default="99" Description="User ID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+    <Config Name="PGID" Target="PGID" Default="100" Description="Group ID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
     <Config Name="UMASK" Target="UMASK" Default="022" Description="Default umask" Type="Variable" Display="advanced" Required="false" Mask="false">022</Config>
 </Container>
