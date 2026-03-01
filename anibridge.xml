@@ -19,9 +19,12 @@
     <DonateImg/>
     <Requires/>
     <Branch><Tag>v2</Tag><TagDescription>v2</TagDescription></Branch>
-    <Branch><Tag>latest</Tag><TagDescription>Latest</TagDescription></Branch>
-    <Branch><Tag>beta</Tag><TagDescription>Beta</TagDescription></Branch>
-    <Branch><Tag>experimental</Tag><TagDescription>Experimental</TagDescription></Branch>
+    <Branch><Tag>latest</Tag><TagDescription>Latest Release</TagDescription></Branch>
+    <Branch><Tag>beta</Tag><TagDescription>Beta Release</TagDescription></Branch>
+    <Branch><Tag>alpha</Tag><TagDescription>Alpha Release</TagDescription></Branch>
+    <Branch><Tag>main</Tag><TagDescription>Main Branch</TagDescription></Branch>
+    <Branch><Tag>develop</Tag><TagDescription>Develop Branch</TagDescription></Branch>
+    <Branch><Tag>experimental</Tag><TagDescription>Experimental Branch</TagDescription></Branch>
     <Config Name="WebUI" Target="4848" Default="4848" Mode="tcp" Description="Web UI port" Type="Port" Display="always" Required="true" Mask="false">4848</Config>
     <Config Name="Appdata" Target="/config" Default="/mnt/user/appdata/anibridge" Mode="rw" Description="Persistent config and data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/anibridge</Config>
     <Config Name="PUID" Target="PUID" Default="99" Description="User ID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
