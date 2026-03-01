@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
     <Name>AniBridge</Name>
-    <Repository>ghcr.io/anibridge/anibridge:v2</Repository>
+    <Repository>ghcr.io/anibridge/anibridge:beta</Repository>
     <Registry>https://github.com/anibridge/anibridge/pkgs/container/anibridge</Registry>
     <Network>bridge</Network>
     <Shell>sh</Shell>
@@ -10,7 +10,7 @@
     <Project>https://github.com/anibridge/anibridge</Project>
     <ReadMe>https://anibridge.eliasbenb.dev</ReadMe>
     <Overview>The smart way to keep your anime lists perfectly synchronized.</Overview>
-    <Category>MediaApp:Other Tools:Utilities</Category>
+    <Category>MediaApp:Other Status:Beta</Category>
     <WebUI>http://[IP]:[PORT:4848]/</WebUI>
     <TemplateURL>https://raw.githubusercontent.com/anibridge/anibridge-unraid-templates/main/anibridge.xml</TemplateURL>
     <Icon>https://raw.githubusercontent.com/anibridge/anibridge-unraid-templates/main/images/anibridge.png</Icon>
